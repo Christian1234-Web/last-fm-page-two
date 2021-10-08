@@ -1,0 +1,61 @@
+import React from 'react';
+import { Link } from "react-router-dom";
+
+
+function Navbar() {
+    return <div>
+   
+   <section className="nav-container flex space-btw hover ">
+            <div className="left-nav">
+                <ul>
+                    <li>
+                        <Link to="/NotFound"><img src="../Images/img-1-album.png"></img></Link>
+                    </li>
+                    <li>
+                        <Link to="/NotFound">second-img</Link>
+                    </li>
+           </ul>
+            </div>
+            <div>
+                <ul>
+                    <li> <Link to="/" id="last">Last.fm</Link>
+                    </li>
+
+                </ul>
+            </div>
+            <div className="right-nav ">
+            <ul className="flex space-btw">
+            <li className="search-img">
+                        <Link to="/"><img src="../Images/search-logo2.png"></img></Link>
+                    </li>
+                    <li>
+                        <Link to="/NotFound">Live</Link>
+                    </li>
+                    <li>
+                        <Link to="/NotFound">Music</Link>
+                    </li>
+                    <li>
+                        <Link to="/Chart">Charts</Link>
+                    </li> <li>
+                        <Link to="/NotFound">Events</Link>
+                    </li>
+                    <li>
+                        <Link to="/NotFound">Features</Link>
+                    </li> <li>
+                        <Link to="/NotFound">.</Link>
+                    </li>
+                    <li>
+                        <Link  to="/NotFound">Log In</Link>
+                    </li>
+                     <Link to="/sign"> <button className="hover bolder-2" style={{borderRadius:'3px'}}> SIGN UP</button> </Link>
+           </ul>
+            </div>
+
+
+</section>
+
+
+
+    </div>
+}
+export default Navbar;
